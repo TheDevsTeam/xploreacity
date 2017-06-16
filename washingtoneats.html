@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>City Listing - Directory Template</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <header class="header">
+        <!-- Start Logo -->
+        <div class="logo">
+          <a href="#" class="logo-color-bg">
+            <img alt="" src="assets/images/logo.png"/>
+          </a>
+        </div>
+        <!-- End Logo -->
+        <!-- Start User Buttons -->
+        <!-- End User Buttons -->
+        <!-- Start Navbar -->
+        <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+          <div class="container">
+            <div id="slidemenu">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                </li>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About us<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Food Blog<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Blog Grid 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Navbar -->
+        <!-- Header Search Button -->
+      </header>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+    <div class="container-fluid map-listing map-hidden">
+        <div class="row page-head">
+          <div class="current-page-eats">
+            <div class="breadcrumbs text-left">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="washington_dc.html">washington dc</a></li>
+                <li><a href="#">dc eats</a></li>
+              </ul>
+            </div>
+            <div class="current-category">
+              <i class="current-page-icon icon-platter"></i>
+              <a href="#">Restaurants</a>
+            </div>
+            <div class="listing-flag icon-flag"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Map Listing -->
+      <!-- Start Listings Counter and Filter -->
+      <div class="container-fluid listing-block">
+        <div class="row listing-results">
+          <div class="results-count">
+            <span class="counter">20</span> bestest spot to eat in DC.
+          </div>
+        </div>
+      </div>
+      <!-- End Listings Counter and Filter -->
+      <!-- Start Listings Container  -->
+      <div class="container-fluid listing-block">
+        <div class="row listing white">
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Le Diplomate
+                    <div class="ribbon">$$ - French</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/lediplomate.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=1601+14th+st+nw+washington+dc">
+                  1601 14th St NW, Washington, DC 20009
+                </a>
+                <div class="listing-item-excerpt">
+                  Bustling brasserie serves classic French fare & drinks amid a zinc bar, tile floors & sidewalk cafe.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href=" lediplomatedc.com">Check Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Union Market
+                    <div class="ribbon">$$ - Market</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/unionmarket.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=1309+5th+st+ne,+washington,+dc">
+                  1309 5th St NE, Washington, DC 20002
+                </a>
+                <div class="listing-item-excerpt">
+                   Warehouse-like food market with a host of artisans offering charcuterie, empanadas, gelato & more.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="http://unionmarketdc.com/">Official site</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Red Hen
+                    <div class="ribbon">$$ - Italian</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/theredhen.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=1822+1st+st+nw,+washington+dc">
+                  1822 1st St NW, Washington, DC 20001
+                </a>
+                <div class="listing-item-excerpt">
+                  Creative wood-fired Italian eats in an airy, rustic-industrial space with open kitchen & large bar.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="theredhendc.com">Checkout Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Amsterdam Falafelshop
+                    <div class="ribbon">$$ - Falafel shop</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/falafelshop.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+2425+18th+St+NW,+Washington,+DC">
+                  2425 18th St NW, Washington, DC 20009
+                </a>
+                  <div class="listing-item-excerpt">
+                  Falafel on pita bread plus Middle Eastern salads & Belgian fries at a late-night quick-serve eatery.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="places.singleplatform.com">Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    1789 Restaurant
+                    <div class="ribbon">$$ - American</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/The1789-2.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+1226 +36th +St +NW, +Washington, +DC 20007">
+                  1226 36th St NW, Washington, DC 20007
+                </a>
+                <div class="listing-item-excerpt">
+                  A luxe, renovated Federal house sets the scene for refined seasonal American fare.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="places.singleplatform.com">Menu</a>
+                -- <a href="opentable.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Fiola Mare
+                    <div class="ribbon">$$ - Italian</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/fionamare.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+3050 +K +St +NW, +Washington, +DC +20007">
+                  3050 K St NW, Washington, DC 20007
+                </a>
+                <div class="listing-item-excerpt">
+                  Sophisticated Italian seafood, plus wine & cocktails, in a luxe, modern setting with river views.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="urbanspoon.com">Menu</a>
+                -- <a href="reserve.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Chaia
+                    <div class="ribbon">$$ · vegetarian & vegan</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/thechaia.JPG" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+3207 +Grace +St +NW, +Washington, +DC +20007">
+                  3207 Grace St NW, Washington, DC 20007
+                </a>
+                <div class="listing-item-excerpt">
+                  Chic counter serve for vegetarian & vegan tacos popularized at farmer's markets, plus wine & beer.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href=" places.singleplatform.com">Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Buredo
+                    <div class="ribbon">$$ · Sushi</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/theburedo.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http:google.com/maps?q=+1213+Connecticut+Ave+NW,+Washington,+DC+20036">
+                  1213 Connecticut Ave NW, Washington, DC 20036
+                </a>
+                <div class="listing-item-excerpt">
+                  At this funky fast-casual, creative sushi is rolled up burrito-style in supersized seaweed wraps.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="places.singleplatform.com">Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Fogo de Chão Brazilian Steakhouse
+                    <div class="ribbon">$$ · Brazilian Restaurant</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/fogodechao.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+1101 +Pennsylvania +Avenue +NW, +Washington, +DC +20004">
+                  1101 Pennsylvania Avenue NW, Washington, DC 20004
+                </a>
+                <div class="listing-item-excerpt">
+                  Upscale Brazilian chain for all-you-can-eat meat carved tableside plus an extensive salad bar.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="opentable.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Joe's Seafood, Prime Steak & Stone Crab
+                    <div class="ribbon">$$ · Seafood</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/joesseafood.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+750 +15th +St +NW, +Washington, +DC +20005">
+                  750 15th St NW, Washington, DC 20005
+                </a>
+                <div class="listing-item-excerpt">
+                  American surf 'n' turf restaurant serving upmarket fare & cocktails in a lavish 2-story space.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="places.singleplatform.com">Menu</a>
+                -- <a href="opentable.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Rose's Luxury
+                    <div class="ribbon">$$ · American</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/rosesluxury.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+717 +8th +St +SE, +Washington, +DC +20003">
+                  717 8th St SE, Washington, DC 20003
+                </a>
+                <div class="listing-item-excerpt">
+                  Eclectic New American tapas menu crafted in a cozy, converted townhouse with an upstairs lounge. Genuinely delicious dishes, expertly prepared
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="places.singleplatform.com">Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+          <!-- Start Listing Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Little Serow
+                    <div class="ribbon">$$ · Thai Restaurant</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/thaifood.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+1511 +17th +St +NW, +Washington, +DC +20036">
+                  1511 17th St NW, Washington, DC 20036
+                </a>
+                <div class="listing-item-excerpt">
+                  Intimate & dark, this cavelike spot serves an innovative set menu of Northern-Thailand specialties.  <strong>Walk-in only; no reservations or phone.</strong>
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="http://littleserow.com/index.html">Official site</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Ghibellina
+                    <div class="ribbon">$$ · Italian Restaurant</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/ghibellina.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+1610 +14th +St +NW,+ Washington, +DC +20009">
+                  1610 14th St NW, Washington, DC 20009
+                </a>
+                <div class="listing-item-excerpt">
+                  Earthy Tuscan fare, cocktails & wine in vast rustic-industrial space with marble bar & open kitchen.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="urbanspoon.com">Menu</a>
+                -- <a href="opentable.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.5</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Doi Moi
+                    <div class="ribbon">$$ · Vietnamese Restauran</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/thedoi-moi.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+1800 +14th +St +NW, +Washington, +DC +20009">
+                  1800 14th St NW, Washington, DC 20009
+                </a>
+                <div class="listing-item-excerpt">
+                  Hip, sleek kitchen furnishing house cocktails & Southeast Asian street fare, including a vegan menu.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="urbanspoon.com">Menu</a>
+                -- <a href="opentable.com">Make reservation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Bub and Pop's
+                    <div class="ribbon">$$ · Sandwich Shop</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/bub-and-pops.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                   1815 M St NW, Washington, DC 20036
+                </a>
+                <div class="listing-item-excerpt">
+                  Warmly decorated nook serving up handcrafted hoagies & unique pickles, plus soups & salads.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="http://places.singleplatform.com/bub-and-pops/menu?ref=google">Menu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-dinner"></a>
+              <div class="listing-item-rating">4.6</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Ambar Capitol Hill
+                    <div class="ribbon">$$ · Serbian Restaurant</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/backgrounds/Ambar.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="http://google.com/maps?q=+523 +8th +St +SE, +Washington, +DC +20003">
+                  523 8th St SE, Washington, DC 20003
+                </a>
+                <div class="listing-item-excerpt">
+                  Small plates menu of traditional Balkan dishes, plus regional spirits presented in rustic-chic digs.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">Restaurant</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Listing Item Col -->
+        </div>
+      </div>
+      <!-- End Listings Container  -->
+      <!-- Start Footer -->
+      <footer>
+        <div class="row footer-info">
+          <div class="footer-col footer-terms">
+            <a href="#">Terms of Use</a>
+          </div>
+          <div class="footer-col footer-privacy">
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer-col social-networks">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+          </div>
+          <div class="footer-col footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-col footer-contact">
+            <div class="footer-address">
+              Your Business Address Here
+            </div>
+            <div class="footer-contact-data">
+              (99) 989-745-9922
+            </div>
+          </div>
+        </div>
+        <div class="row footer-logo">
+          <a href="#">
+            <img alt="" src="assets/images/logo.png"/>
+          </a>
+        </div>
+        <div class="row footer-credits">
+          <div class="copyright">
+            (C) 2017 Your Company, All right reserved
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapListingMarkers.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
